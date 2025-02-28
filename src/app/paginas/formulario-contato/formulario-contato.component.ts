@@ -75,8 +75,8 @@ export class FormularioContatoComponent implements OnInit{
 
     this.contatoService.editarOuSalvarContato(novoContato).subscribe(() => {
       this.contatoForm.reset();
-      this.router.navigateByUrl('/lista-contatos')
     });
+    this.router.navigateByUrl('/lista-contatos')
   }
 
   aoSelecionarArquivo(event: any) {
